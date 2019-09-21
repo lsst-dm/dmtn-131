@@ -15,6 +15,9 @@ export TEXMFHOME ?= lsst-texmf/texmf
 
 $(DOCNAME).pdf: $(tex) meta.tex local.bib
 	latexmk -bibtex -xelatex -f $(DOCNAME)
+	makeglossaries $(DOCNAME)      
+	xelatex $(DOCNAME)
+
 
 acronyms.tex: $(tex) myacronyms.txt
 	$(TEXMFHOME)/../bin/generateAcronyms.py $(tex)
