@@ -19,6 +19,9 @@ $(DOCNAME).pdf: $(tex) meta.tex local.bib
 acronyms.tex: $(tex) myacronyms.txt
 	$(TEXMFHOME)/../bin/generateAcronyms.py $(tex)
 
+aglossary.tex :$(tex) myacronyms.txt
+	generateAcronyms.py  -g $(tex)
+
 .PHONY: clean
 clean:
 	latexmk -c

@@ -1,0 +1,19 @@
+\section{Studies to date}
+A simplified sizing model (\citeds{DMTN-072}) was used to run a Google study on \gls{LSST}, a detailed
+report may be found in \citeds{DMTN-125}.
+
+We deomstrated some of the major compnents of \gls{LSST} Data Managmenet could work on Google.
+Brifely we deployed \gls{Qserv} on Google with reasonable performance (80\% or better of in-house).
+We demonstrated Data transfer  could adequate for \gls{Prompt Processing}, within the limits of the available network. i
+The Prompt Product Database was  stood up and tested.  The  \gls{Science Platform} was deployed and users simulated.
+The later of course is designed around kubernetes and almost made for Google Cloud.
+
+
+We did not demonstrate teh other major (and largest part of \gls{DM}) the \gls{Data Release} Processing. That we are
+currently trying with
+Amazon Web Services / Elastic Compute Cloud and HTCondor.
+See \citeds{DMTN-114} for details.
+This is progressing.
+
+We ay conclude from these studies that we have good people in \gls{DM} and
+we are able to deploy our systems in various locations especially if kubernetes is avialble.

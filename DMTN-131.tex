@@ -6,9 +6,10 @@
 % Package imports go here.
 
 % Local commands go here.
+\input{aglossary.tex}
+\makeglossaries
 
-% To add a short-form title:
-% \title[Short title]{Title}
+
 \title{When  clouds might be good  for LSST}
 
 % Optional subtitle
@@ -54,7 +55,9 @@ In this short note we would like to consider potential annual operating costs fo
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
+%\section{Acronyms} \label{sec:acronyms}
+%\input{acronyms.tex}
+\printglossaries
+
 
 \end{document}
